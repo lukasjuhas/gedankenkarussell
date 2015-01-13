@@ -110,7 +110,7 @@ nav a:hover {
    ============== */
 
 .main {
-    padding: 30px 0;
+    padding: 30px 0px 100px 0px;
 }
 
 .main article h1 {
@@ -205,9 +205,11 @@ h2 {
 
     .header-container,
     .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
+        &.shadow {
+            -webkit-box-shadow: 0 5px 10px #aaa;
            -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
+            box-shadow: 0 5px 10px #aaa;
+        }
     }
 
 /* ============
@@ -397,7 +399,6 @@ h2 {
         padding: 0;
         li {
             margin: 0;
-            padding: 0;
             color: #000;
             a {
                 text-decoration:none;
@@ -413,4 +414,64 @@ h2 {
     input[name="submit"] {
         margin: 15px 0 0 0;
     }
+}
+
+#facebook {
+    margin: 30px 0 0 0;
+}
+.facebook {
+    width: 50px;
+    height: 50px;
+    float: left;
+    background: url(../images/facebook.png) no-repeat;
+}
+
+.phone {
+    padding:0 0 0 35px;
+    position: relative;
+    &:before {
+        content: " ";
+        width: 25px;
+        height: 25px;
+        background: url(../images/phone.png) no-repeat;
+        background-size: 25px 25px;
+        position:  absolute;
+        left: 0;
+    }
+}
+
+.mail {
+    padding: 0 0 0 35px;
+    position: relative;
+    &:before {
+        content: " ";
+        width: 25px;
+        height: 25px;
+        background: url(../images/mail.png) no-repeat;
+        background-size: 25px 25px;
+        position:  absolute;
+        left: 0;
+    }
+}
+
+.facebook-small {
+    padding: 0 0 0 35px;
+    position: relative;
+    &:before {
+        content: " ";
+        width: 25px;
+        height: 25px;
+        background: url(../images/facebook.png) no-repeat;
+        background-size: 25px 25px;
+        position:  absolute;
+        left: 0;
+    }
+}
+
+.impressum {
+    color: #999;
+    text-decoration:none;
+}
+.impressum-content {
+    display: none;
 }
